@@ -19,7 +19,7 @@ function showList(array) {
       const subjects = element.subjects;; // array subjetcs que se encuentra dentro del objeto
       const imgArray = element.images; //array images dentro del objeto
      
-    //tomo las propiedades: title, array subjects, images, details, publication para generar cada articulo.
+    //tomo las propiedades: title, array subjects, images, details, publication, modified para generar cada articulo.
       template += `
          <article class="text-center" style="background-color:#161616">
           <div>
@@ -38,7 +38,7 @@ function showList(array) {
             `;
       });
       const conditionDetails = element.details === null ? "" : ` Details: ${element.details}`;
-      //aseguro con el operador condicional terneario que la descripcion que se mostrara no este vacia y muestre un null.
+      //aseguro con el operador condicional ternario que la descripcion que se mostrara no este vacia y muestre un null.
       template += `
               <div>
               <p class="text-justify load">${conditionDetails}</p>
